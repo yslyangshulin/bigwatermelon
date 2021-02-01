@@ -1817,10 +1817,7 @@ window.__require = function e(t, n, o) {
                 }))), this.gameOverT2.node.opacity = 0, this.gameOverT2.node.y = this.gameOverT1.node.y - 100, this.gameOverT2.node.runAction(cc.sequence(cc.delayTime(.2), cc.spawn(cc.fadeIn(1), cc.moveBy(1, 0, -50)), cc.delayTime(.3))), this.gameOverT2.node.runAction(cc.sequence(cc.delayTime(2), cc.scaleTo(.3, 1.2).easing(cc.easeSineInOut()), cc.scaleTo(.3, 1).easing(cc.easeSineInOut()))).repeatForever()
             },
             initEndLayer: function() {
-                this.gameOverT1.node.active = !1, this.gameOverT2.node.active = !1, this.gameOverToEnd.active = !1, o.publicGameBool || adBreak({
-                    type: "next",
-                    name: "restart-game"
-                }), a.gotoEndLayer1()
+                this.gameOverT1.node.active = !1, this.gameOverT2.node.active = !1, this.gameOverToEnd.active = !1, o.publicGameBool ||  a.gotoEndLayer1()
             },
             start: function() {},
             update: function(e) {
@@ -1833,10 +1830,7 @@ window.__require = function e(t, n, o) {
                 o.gameScore = e
             },
             RestartGame: function() {
-                o.GAME_OVER_BOOL = !0, o.gameScore = 0, o.publicGameBool || adBreak({
-                    type: "next",
-                    name: "restart-game"
-                }), c.loadingScene("MainGameScene")
+                o.GAME_OVER_BOOL = !0, o.gameScore = 0, o.publicGameBool || c.loadingScene("MainGameScene")
             },
             SetGameEndScore: function() {
                 a.gameOverShowText(o.gameScore, 1)
@@ -1959,10 +1953,7 @@ window.__require = function e(t, n, o) {
                     var e = this;
                     this.congratulation.children[2].active = !1, this.congratulation.children[1].runAction(cc.sequence(cc.scaleTo(.5, 0).easing(cc.easeBackIn()), cc.callFunc(function() {
                         e.congratulation.active = !1, a.default.GameUpdateCtrl = !0
-                    }))), l.publicGameBool || adBreak({
-                        type: "next",
-                        name: "restart-game"
-                    }), this.scheduleOnce(function() {
+                    }))), l.publicGameBool || this.scheduleOnce(function() {
                         e.player.getComponent(cc.PolygonCollider).enabled = !0
                     }, 1)
                 }, t.Instance = null, c([f(cc.Node)], t.prototype, "mainCamera", void 0), c([f(cc.Node)], t.prototype, "bgLayer", void 0), c([f(cc.Label)], t.prototype, "scoreLabel", void 0), c([f(cc.Node)], t.prototype, "scorePanel", void 0), c([f(cc.Node)], t.prototype, "guidePanel", void 0), c([f(cc.Node)], t.prototype, "injuredPanel", void 0), c([f(cc.Node)], t.prototype, "levelPanel", void 0), c([f(cc.Node)], t.prototype, "levelProgress", void 0), c([f(cc.Node)], t.prototype, "heartPanel", void 0), c([f(cc.Node)], t.prototype, "congratulation", void 0), c([f(cc.Node)], t.prototype, "adsButton", void 0), c([f(cc.Node)], t.prototype, "player", void 0), t = n = c([p], t)
@@ -3843,10 +3834,7 @@ console.log('12')
                 }, t.prototype.start = function() {
                     this.startPanel.children[1].scaleX = 0, this.startPanel.children[1].runAction(cc.scaleTo(.5, .9).easing(cc.easeBackOut())), this.startPanel.children[2].runAction(cc.repeatForever(cc.sequence(cc.scaleTo(.5, 1.1), cc.scaleTo(.5, 1), cc.delayTime(.5)))), this.initTitle(), cc.director.preloadScene("MainGameScene")
                 }, t.prototype.StartGame = function() {
-                    i.publicGameBool || adBreak({
-                        type: "next",
-                        name: "restart-game"
-                    }), this.startBtn.stopAllActions(), this.startBtn.runAction(cc.sequence(cc.scaleTo(.1, .8), cc.scaleTo(.1, 1), cc.callFunc(function() {
+                    i.publicGameBool || this.startBtn.stopAllActions(), this.startBtn.runAction(cc.sequence(cc.scaleTo(.1, .8), cc.scaleTo(.1, 1), cc.callFunc(function() {
                         cc.director.loadScene("MainGameScene")
                     })))
                 }, t.prototype.initTitle = function() {
