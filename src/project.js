@@ -1909,6 +1909,11 @@ window.__require = function e(t, n, o) {
                     // b.default.Instance.createOneFruit(Math.floor(Math.random()*6))
                     // b.default.Instance.createOneFruit(10)
                     window.open("https://weibo.com/p/100808dfb9dc164782eec4ef2ba1c815a163ed/super_index");
+                    // cc.find("Canvas/gameManager").getComponent("GameManager").GameOver();
+                    
+                    // var e = cc.find("Canvas").getComponent("MainGameJS");
+                    // e.gameEnd();
+                    // cc.audioEngine.play(r.default.Instance.audioClip[4], false, 1);
                 }, t.prototype.TestPasslevel = function() {
                     var e = this;
                     this.lerpCtrl = !0, this.nowYQ >= this.passlevelYQ && (this.levelPanel.children[2].runAction(cc.sequence(cc.delayTime(1.3), cc.callFunc(function() {
