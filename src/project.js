@@ -1905,8 +1905,9 @@ window.__require = function e(t, n, o) {
                     this.UpdateScoreLabel(e), this.lerpCtrl && this.lerpNumFunc(this.passlevelYQ), this.levelPanel.children[1].getComponent(cc.Label).string = s.default.Instance.GetLevel().toString()
                 }, t.prototype.adsButtonFunc = function() {
                     if(b.default.Instance.targetFruit.name==='') return;
-                    //b.default.Instance.targetFruit.destroy()
-                    //b.default.Instance.createOneFruit(Math.floor(Math.random()*6))
+                    // b.default.Instance.targetFruit.destroy()
+                    // b.default.Instance.createOneFruit(Math.floor(Math.random()*6))
+                    // b.default.Instance.createOneFruit(10)
                     window.open("https://weibo.com/p/100808dfb9dc164782eec4ef2ba1c815a163ed/super_index");
                 }, t.prototype.TestPasslevel = function() {
                     var e = this;
