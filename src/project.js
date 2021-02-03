@@ -1908,7 +1908,7 @@ window.__require = function e(t, n, o) {
                     // b.default.Instance.targetFruit.destroy()
                     // b.default.Instance.createOneFruit(Math.floor(Math.random()*6))
                     // b.default.Instance.createOneFruit(10)
-                    window.open("https://weibo.com/p/100808dfb9dc164782eec4ef2ba1c815a163ed/super_index");
+                    window.open("https://weibo.com/p/1008082ba5e510c9302a0fe648e63550974085");
                     // cc.find("Canvas/gameManager").getComponent("GameManager").GameOver();
                     
                     // var e = cc.find("Canvas").getComponent("MainGameJS");
